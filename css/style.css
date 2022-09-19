@@ -1,0 +1,98 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;900&display=swap');
+:root{
+  scroll-behavior: smooth;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Add our style below here */
+.container{
+  width: 90%;
+  max-width: 1000px;
+  margin:auto;
+/*   this is just the page NOT the grid */
+}
+.gi{border:3px solid hotpink}
+
+img{
+  width:100%;
+}
+
+.main-grid{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "n h h h h"
+                       "n g k j l"
+                       "n e e e e"
+                       "n a b c d"
+                       "n f f f f";
+}
+#gi-n{
+  grid-area: n;
+  padding:1rem;
+}
+#gi-h{
+  grid-area: h;
+}
+#gi-e{
+  grid-area: e;
+  display: flex;
+  gap:.5rem;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+#gi-a{
+  grid-area: a;
+}
+#gi-b{
+  grid-area: b;
+}
+#gi-c{
+  grid-area: c;
+}
+#gi-d{
+  grid-area: d;
+}
+#gi-f{
+  grid-area: f;
+}
+#gi-g{
+  grid-area: g;
+}
+#gi-j{
+  grid-area: j;
+}
+#gi-k{
+  grid-area: k;
+}
+#gi-l{
+  grid-area: l;
+}
+
+h3, h3 + p{
+  padding:.5rem 1rem;
+}
+nav a{
+  display: block;
+  width:78%;
+  margin-top:1rem;
+  text-decoration: none;
+  color:slategrey;
+}
+nav a:hover{
+  color:#bcd9f5;
+}
+
+
+
+
+
+
+
+
+
